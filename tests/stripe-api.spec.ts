@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import Stripe from "stripe";
 import "dotenv/config";
 
+// CI pull-request practice
 const stripeKey = process.env.STRIPE_SECRET_KEY;
 
 if (!stripeKey) {
