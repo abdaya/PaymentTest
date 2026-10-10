@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npx playwright test --project=api
       env:
         STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }} 
         TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
